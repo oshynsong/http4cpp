@@ -11,11 +11,11 @@ own derivation and extension.
 2. g++ 4.8+
 3. libcurl must be installed:
 ```shell
-# for debian
-sudo apt-get install libcurl3
+    # for debian
+    sudo apt-get install libcurl3
 
-# for redhat
-yum install curl curl-devel
+    # for redhat
+    yum install curl curl-devel
 ```
 
 ## Install
@@ -30,7 +30,7 @@ The `src` directory must be in the compile include path `-I` option.
 
 Use the following command:
 ```shell
-make static
+    make static
 ```
 It will generate an directory called `output` in the current directory,
 and the static library `libhttp4cpp.a` will be in it.
@@ -39,7 +39,7 @@ and the static library `libhttp4cpp.a` will be in it.
 
 Use the following command:
 ```shell
-make shared
+    make shared
 ```
 It will generate the `libhttp4cpp.so` in the `output` directory.
 
@@ -76,7 +76,7 @@ It will generate the `libhttp4cpp.so` in the `output` directory.
 
 The details can be found in the `test/http_test.cpp`. Use
 ```shell
-make test
+    make test
 ```
 to generate the test executables. Further extension usage can be
 implemented by derivate the HttpRequest and HttpResponse class.
